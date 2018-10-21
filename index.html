@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>The Flower Collector</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+</head>
+
+<body>
+
+	<div class="header text-center">
+		<h1>FLOWER COLLECTOR</h1>
+		<h3>LUCKY NUMBER:</h3>
+		<h3 id="luckyNumber"></h3>
+    </div>
+    <div class="row">
+			<div class="col-lg-12 directions">
+				<p>You will be given a random number at the start of the game.
+                        Click on a flower to add a specific amount of points to your total score. The value of each flower is hidden until you click on it. Each time the game starts, the game will change the values of each flower. <hr>
+                        You win the game by matching your total score to the random number.<hr>
+                        You lose the game if your total score goes above the random number.</p>
+			</div>
+		</div>
+	
+	<div class="container">
+		
+		<div class="row">
+			<div class="col-lg-6 col-lg-6 col-lg-3 col-lg-3 text-center">
+				<img class="flowerimg img-responsive" id="flower1" src="assets/images/flower-2.jpg" alt="flower 1"/>
+			</div>
+			<div class="col-lg-6 col-lg-6 col-lg-3 col-lg-3 text-center">
+				<img class="flowerimg img-responsive" id="flower2" src="assets/images/flower-8.jpg" alt="flower 2"/>
+			</div>
+			<div class="col-lg-6 col-lg-6 col-lg-3 col-lg-3 text-center">
+				<img class="flowerimg img-responsive" id="flower3" src="assets/images/flower-4.jpg" alt="flower 3"/>
+			</div>
+			<div class="col-lg-6 col-lg-6 col-lg-5 col-lg-5 text-center">
+				<img class="flowerimg img-responsive" id="flower4" src="assets/images/flower-3.jpg" alt="flower 4"/>
+			</div>
+		</div>
+
+		<div class="row text-center">
+			<div class="col-lg-5 total">
+				<h3>SCORE:</h3>
+				<h3 id="totalScore"></h3>
+			</div>
+			<div class="col-lg-9 button">
+				<h3 id="winOrLose"></h3>
+				<button type="button" class="btn btn-transparent btn-lg-9">PLAY AGAIN</button>
+			</div>
+			<div class="col-sm-9 scores">
+				<p class="totalScore">WINS: <span id="wins"></span></p> 
+				<p class="totalScore">LOSSES: <span id="losses"></span></p>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
